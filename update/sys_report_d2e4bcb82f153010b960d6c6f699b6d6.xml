@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_drill">
-    <sys_report_drill action="INSERT_OR_UPDATE">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
+    <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
         <aggregation_source>no_override</aggregation_source>
@@ -27,15 +27,15 @@
         <chart_title_y_position>0</chart_title_y_position>
         <chart_width>600</chart_width>
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
-        <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
+        <color_palette display_value="Greens dark to light (3)">08e1d719d7100200b96d45a3ce610375</color_palette>
         <colors/>
         <column/>
         <compute_percent>aggregate</compute_percent>
         <content/>
-        <created_by_user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</created_by_user>
+        <created_by_user display_value="Beth Anglin">46d44a23a9fe19810012d100cca80666</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
-        <custom_config/>
+        <custom_config>{"transforms":[{"transform":{"transform":"Reference","name":"chart-subjects"}}]}</custom_config>
         <decimal_precision>2</decimal_precision>
         <description/>
         <direction>minimize</direction>
@@ -45,8 +45,8 @@
         <donut_width_percent>50</donut_width_percent>
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
-        <field>u_requested_for</field>
-        <field_list>number,opened_at,short_description,caller_id,priority,state,category,assignment_group,assigned_to,sys_updated_on,sys_updated_by</field_list>
+        <field>u_request_type</field>
+        <field_list>number,priority,state,assigned_to,short_description,sys_class_name</field_list>
         <filter/>
         <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
@@ -54,7 +54,7 @@
         <gauge_autoscale>true</gauge_autoscale>
         <group/>
         <import_table/>
-        <interval>month</interval>
+        <interval>year</interval>
         <is_published>false</is_published>
         <is_real_time>false</is_real_time>
         <is_scheduled>false</is_scheduled>
@@ -88,7 +88,7 @@
         <series_name_text/>
         <set_color>color_palette</set_color>
         <show_chart_border>false</show_chart_border>
-        <show_chart_data_label>false</show_chart_data_label>
+        <show_chart_data_label>true</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
         <show_chart_total>false</show_chart_total>
         <show_data_label_position_middle>false</show_data_label_position_middle>
@@ -102,29 +102,29 @@
         <start_time/>
         <style_config/>
         <sumfield/>
-        <sys_class_name>sys_report_drill</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-07-09 07:15:16</sys_created_on>
-        <sys_id>dbcf0fa02f113010b960d6c6f699b6b6</sys_id>
+        <sys_class_name>sys_report</sys_class_name>
+        <sys_created_by>beth.anglin</sys_created_by>
+        <sys_created_on>2021-07-09 14:37:02</sys_created_on>
+        <sys_id>d2e4bcb82f153010b960d6c6f699b6d6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Monthly Active Requests by Requested for</sys_name>
+        <sys_name>NeedIt Request Type chart</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
-        <sys_update_name>sys_report_drill_dbcf0fa02f113010b960d6c6f699b6b6</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-07-09 07:15:16</sys_updated_on>
+        <sys_update_name>sys_report_d2e4bcb82f153010b960d6c6f699b6d6</sys_update_name>
+        <sys_updated_by>beth.anglin</sys_updated_by>
+        <sys_updated_on>2021-07-09 14:37:02</sys_updated_on>
         <table>x_58872_needit_needit</table>
-        <title>Monthly Active Requests by Requested for</title>
+        <title>NeedIt Request Type chart</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
-        <trend_field>u_when_needed</trend_field>
-        <type>line_bar</type>
+        <trend_field/>
+        <type>pie</type>
         <upper_limit/>
         <use_color_heatmap>false</use_color_heatmap>
         <use_null_in_trend>false</use_null_in_trend>
-        <user>6816f79cc0a8016401c5a33be04be441</user>
+        <user>46d44a23a9fe19810012d100cca80666</user>
         <x_axis_allow_decimals>true</x_axis_allow_decimals>
         <x_axis_display_grid>false</x_axis_display_grid>
         <x_axis_grid_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</x_axis_grid_color>
@@ -155,5 +155,5 @@
         <y_axis_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</y_axis_title_color>
         <y_axis_title_size>12</y_axis_title_size>
         <y_axis_to/>
-    </sys_report_drill>
+    </sys_report>
 </record_update>
